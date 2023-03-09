@@ -1,0 +1,25 @@
+GET http://localhost:5000/posts
+
+###
+GET http://localhost:5000/posts/633af98e33df33faace75d67
+
+###
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "title": "Rumahku nenek",
+    "message": "rumahku berada di jalan delima kota pekanbaru"
+}
+
+###
+PATCH http://localhost:5000/posts/633af98e33df33faace75d67
+Content-Type: application/json
+
+{
+    "title": "Kampusku",
+    "message": "Kampusku berada di jalan Nangka kota pekanbaru"
+}
+
+###
+DELETE  http://localhost:5000/posts/633be5d18d537d0348645da6
